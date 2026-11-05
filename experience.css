@@ -1,0 +1,177 @@
+/* The same paper, ink and vermilion. Different ways to feel the same time. */
+.eyebrow,.scene-top,.scene-title,.counter-top,.header-caption{font-size:11px}
+.hero-aside,.counter-bottom>p,.hero-foot p,.section-heading-foot p,.weeks-description>p{font-size:13px;line-height:1.85}
+.track-labels{font-size:10px;min-height:35px}.today-marker{top:20px}
+.scene-description{font-size:14px;line-height:1.85;max-width:360px}
+.secondary-metric .metric-description,.metrics-note,.meaning-copy p{font-size:13px;line-height:1.85}
+.secondary-metric .metric-title,.legend,.weeks-footer,.week-readout,.scroll-link,.text-button,.share-caption{font-size:11px!important}
+.scene-secondary{padding-bottom:10px}.interaction-note{font-size:12px;line-height:1.75;color:var(--muted)}
+input[type=range]{padding:15px 0;min-height:48px;border:0;accent-color:var(--red);cursor:ew-resize}
+input[type=range]:disabled{cursor:default;opacity:.45}
+
+/* Days: a monumental field. The bars acquire height as the visitor passes. */
+.scene-days .scene-layout{display:flex;flex-direction:column;justify-content:center;min-height:440px;padding-block:65px;text-align:center;isolation:isolate}
+.scene-days .scene-value{font-size:clamp(115px,21vw,320px);line-height:.9}
+.scene-days .scene-title-big{max-width:none;font-size:clamp(32px,4vw,62px)}
+.scene-days .scene-description{margin:23px auto 0;max-width:460px}
+.scene-days .scene-art{position:absolute;inset:auto 0 0;width:100%;height:170px;z-index:-1;opacity:.16}
+.scene-days .scene-art-caption{display:none}
+.scene-days .day-stripes i{transform:scaleY(calc(.25 + var(--scene-progress,.5)*.75));transition:transform .1s linear}
+.scene-days .scene-secondary{justify-content:space-between;border-top:0;max-width:900px;margin:20px auto 0}
+.scene-days .secondary-metric{flex:0 1 45%;text-align:center;border:0;padding-inline:10px}
+
+/* Summers: a finite album, with a year the visitor can actually reach. */
+.scene-summers .scene-layout{display:block;isolation:isolate;text-align:center;min-height:400px;padding-block:55px 35px}
+.scene-summers .scene-value{font-size:clamp(140px,18vw,265px)}
+.scene-summers .scene-title-big{max-width:none;font-size:clamp(30px,3.5vw,53px)}
+.scene-summers .scene-description{margin:20px auto 0;color:var(--ink)}
+.scene-summers .scene-art{position:absolute;inset:25px 0 0;width:100%;height:340px;z-index:-1}
+.scene-summers .summer-disc{left:50%;right:auto;top:0;width:300px;height:300px;transform:translateX(-50%) rotate(calc(var(--summer-position,0)*35deg));transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.scene-summers .summer-orbit{left:calc(50% - 245px);width:490px;top:85px;height:135px;animation:none;transform:rotate(calc(-22deg + var(--scene-progress,.5)*25deg));transition:transform .12s linear}
+.summer-controls{border-top:1px solid var(--ink);padding-top:30px;margin-top:28px}
+.summer-controls>label{font:13px var(--mono);margin:0}
+.summer-readout{display:flex;gap:7vw;align-items:center;margin-top:15px}
+#summer-year{font:600 clamp(85px,12vw,170px)/1 var(--display);letter-spacing:-.06em}
+#summer-story{font:400 clamp(21px,2.5vw,35px)/1.4 var(--serif);max-width:510px;margin:0}
+.scene-summers .scene-secondary{border-top:0}
+
+/* People: first the quantity, then the name, then the cost of 'later'. */
+.scene-meetings{padding-bottom:60px}
+.scene-meetings .scene-layout{display:block;text-align:right;min-height:0;padding-block:30px 35px;border-bottom:1px solid #eeece450}
+.scene-meetings .scene-value{font-size:clamp(75px,10vw,150px);color:var(--red)}
+.scene-meetings .scene-title-big{max-width:none;font-size:clamp(24px,3vw,45px)}
+.scene-meetings .scene-description{margin:15px 0 0 auto;max-width:400px;color:#c2beb4}
+.later-episode{padding-top:60px}.later-opening{max-width:900px}
+.later-opening>.eyebrow{color:var(--red)}
+.later-opening h3{font:500 clamp(40px,6vw,90px)/1.06 var(--display);letter-spacing:-.04em;margin:27px 0 40px}
+.later-opening h3 em{font:italic 400 .85em var(--serif)}
+.later-opening label{font:12px var(--mono);max-width:450px}
+.later-opening input{color:var(--paper);border-bottom-color:#eeece470;font:500 30px var(--display);padding:14px 0}
+.later-opening input::placeholder{color:#97948b}
+.later-episode .interaction-note{color:#b5b1a6;max-width:500px}
+.later-stage{display:grid;grid-template-columns:1.2fr 1fr;align-items:end;gap:40px;padding-block:45px;border-block:1px solid #eeece450;margin-top:40px}
+.later-letter>span{font:12px var(--mono);color:#c4bfb4;overflow-wrap:anywhere}
+.later-letter>p{font:500 clamp(30px,4.5vw,65px)/1.15 var(--display);letter-spacing:-.035em;margin:23px 0 0}
+.later-letter em{font:italic 400 .95em var(--serif);color:var(--red)}
+.later-date{display:flex;flex-direction:column;gap:18px;text-align:right}
+.later-date>span{font:10px/1.8 var(--mono);color:#c4bfb4}
+.later-date strong{font:500 clamp(30px,3.5vw,52px)/1.06 var(--display);letter-spacing:-.03em;color:var(--paper)}
+.has-delay .later-date strong{color:var(--red)}
+.later-controls{padding-top:25px}.later-controls>label{font:12px var(--mono);display:flex;flex-direction:row;justify-content:space-between;gap:20px}
+.later-controls output{color:var(--red);white-space:nowrap}
+.later-range-ends{display:flex;justify-content:space-between;font:10px/1.6 var(--mono);color:#c4bfb4;gap:20px}
+.later-revelation{display:flex;align-items:center;gap:35px;padding-block:40px}
+.later-revelation>strong{font:600 clamp(95px,13vw,185px)/.85 var(--display);letter-spacing:-.06em;color:var(--red);font-variant-numeric:tabular-nums}
+.later-revelation>p{font:400 clamp(20px,2.5vw,34px)/1.3 var(--serif);max-width:550px;margin:0}
+.later-revelation small{font:12px/1.8 Manrope,sans-serif;color:#b5b1a6;display:block;margin-top:18px}
+.later-dots{display:grid;grid-template-columns:repeat(30,minmax(0,1fr));gap:9px}
+.later-dots i{display:block;height:15px;background:var(--paper);transition:opacity .6s,transform .6s;transform-origin:center}
+.later-dots i:nth-child(7n){background:var(--red)}
+.later-dots i.gone{opacity:.1;transform:scale(.25)}
+.later-dots.is-empty{opacity:.1}
+.later-dot-note{font:11px/1.8 var(--mono);color:#b5b1a6;max-width:800px;margin-top:20px}
+.later-reset{color:var(--paper);border-bottom:1px solid #eeece450;margin-top:12px}
+.later-frequency{padding-top:20px;max-width:460px}
+.later-frequency label{font:12px/1.7 var(--mono)}
+.later-frequency select{font:13px/1.6 Manrope,sans-serif;color:var(--paper);background:var(--ink);border:0;border-bottom:1px solid #eeece470;border-radius:0;padding:12px 0;min-height:48px;width:100%}
+.later-frequency select:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+
+/* Body: a broadcast, not another split screen. */
+.scene-body .scene-layout{display:block;text-align:center;padding-block:50px 0;min-height:0}
+.scene-body .scene-value{font-size:clamp(45px,9vw,140px)}
+.scene-body .scene-title-big{max-width:none;font-size:clamp(28px,4vw,55px)}
+.scene-body .scene-description{margin:20px auto 0;max-width:500px}
+.scene-body .scene-art{height:200px;margin-top:30px;width:100%}
+.body-lines{height:200px;margin-top:0}.body-lines .wave{animation-duration:1.714s}
+.scene-body .scene-secondary{margin-top:0;border-top:0;text-align:right}
+.scene-body .secondary-metric{display:grid;grid-template-columns:1fr auto;gap:0 30px;align-items:center;padding:0}
+.scene-body .secondary-metric .metric-value{grid-column:2;grid-row:1/3;font-size:clamp(35px,6vw,85px)}
+.scene-body .secondary-metric .metric-title{font:400 29px var(--serif);grid-column:1}
+.scene-body .secondary-metric .metric-description{grid-column:1;margin-left:auto;max-width:330px}
+
+/* Sleep: two overlapping worlds, and an honest day of 24 hours. */
+.scene-sleep .scene-layout{grid-template-columns:1fr 1.3fr;min-height:390px;gap:50px}
+.scene-sleep .scene-layout>div:first-child{grid-column:2;grid-row:1;text-align:right}
+.scene-sleep .scene-art{grid-column:1;grid-row:1;height:300px}
+.scene-sleep .scene-value{font-size:clamp(60px,10vw,150px)}
+.scene-sleep .scene-title-big{font-size:clamp(30px,4vw,55px)}
+.scene-sleep .scene-description{margin-left:auto}
+.day-night-band{display:flex;gap:4px;position:absolute;bottom:0;width:100%;height:22px}
+.day-night-band i{flex:1;border:1px solid var(--ink);min-width:0}.day-night-band .night{background:var(--ink)}
+.sleep-explanation{display:flex;justify-content:space-between;gap:30px;font:10px/1.8 var(--mono);margin:25px 0 10px}
+.sleep-explanation>span:last-child{max-width:340px;color:var(--muted);text-align:right}
+
+/* Dawn rises with your scroll. The number becomes the horizon. */
+.scene-sunrises .scene-layout{display:flex;flex-direction:column;justify-content:end;min-height:580px;text-align:center;isolation:isolate;padding-block:65px 30px}
+.scene-sunrises .scene-layout>div:first-child{padding-top:150px}
+.scene-sunrises .scene-value{font-size:clamp(100px,19vw,280px)}
+.scene-sunrises .scene-title-big{max-width:750px;font-size:clamp(28px,3.5vw,50px);margin-inline:auto}
+.scene-sunrises .scene-description{margin:22px auto 0}
+.scene-sunrises .scene-art{position:absolute;inset:0 0 auto;width:100%;height:250px;z-index:-1;overflow:hidden}
+.sunrise-lines:before{bottom:-130px;transform:translateY(calc(100px - var(--scene-progress,.5)*190px));transition:transform .12s linear}
+.scene-sunrises .scene-art-caption{display:none}
+.sunrise-thought{font:400 clamp(24px,3vw,42px)/1.3 var(--display);margin:25px 0 0}
+.sunrise-thought em{font:italic 400 .9em var(--serif)}
+.scene-sunrises .scene-secondary{text-align:center;border:0}
+
+/* The final counter is an interruption of 'later'. */
+.scene-self .scene-layout{display:block;min-height:450px;isolation:isolate;text-align:center;padding-block:65px 30px}
+.scene-self .scene-value{font-size:clamp(100px,18vw,265px);position:relative;z-index:1}
+.scene-self .scene-title-big{max-width:none;font-size:clamp(30px,4vw,55px)}
+.scene-self .scene-description{margin:23px auto 0}
+.postponed-word{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:800 23vw/.8 var(--display);letter-spacing:-.07em;opacity:calc(.14 - var(--scene-progress,.5)*.1);color:transparent;-webkit-text-stroke:1px var(--ink);transform:translateX(calc(var(--scene-progress,.5)*-35px));pointer-events:none;z-index:-1}
+.scene-self .scene-art{position:relative;max-width:500px;height:210px;margin:40px auto 0}
+.scene-self .book-sculpture{height:210px}.scene-self .book-sculpture i{height:170px}
+.scene-self .scene-secondary{text-align:center;border:0}
+.meaning-layout{align-items:center}.meaning-copy p{max-width:430px}
+.intention-form{margin:30px 0 35px;border-top:1px solid #eeece450;padding-top:10px}
+.intention-form label{font:12px/1.6 var(--mono)}
+.intention-form input{color:var(--paper);border-bottom-color:#eeece470;font:14px/1.6 Manrope,sans-serif;min-height:55px}
+.intention-form input::placeholder{color:#aaa79c}
+.intention-button{border:0;background:none;color:var(--red);font:11px var(--mono);padding:12px 0;display:flex;gap:30px;align-items:center;min-height:44px}
+.intention-button>span{font-size:24px}.is-committed .intention-button{color:var(--paper)}
+#intention-status{font:12px/1.8 Manrope,sans-serif;color:#cbc6bb;min-height:0}
+.meaning-copy .button{width:100%;max-width:450px}
+
+@media(max-width:1000px){.later-stage{gap:25px}.later-dots{gap:7px}.scene-sleep .scene-layout{gap:25px}.scene-sleep .scene-art{height:270px}.scene-sleep .scene-value{font-size:9vw}.scene-body .secondary-metric .metric-value{font-size:6vw}}
+@media(max-width:650px){
+  .eyebrow,.scene-top,.scene-title,.counter-top,.header-edit{font-size:9px}
+  .counter-top{flex-wrap:wrap;gap:12px}.live-label{font-size:8px}.hero-prelude .eyebrow{font-size:9px}
+  .hero-aside,.counter-bottom>p,.hero-foot p,.section-heading-foot p,.weeks-description>p{font-size:12px;line-height:1.8}
+  .track-labels{font-size:8px;min-height:36px}.today-marker{top:20px}
+  .scene-title{max-width:55%;text-align:right;line-height:1.6}.scene-number{flex-shrink:0;font-size:9px;gap:8px}
+  .scene-description{font-size:13px;max-width:300px}.secondary-metric .metric-description{font-size:12px}
+  .secondary-metric .metric-title,.legend,.weeks-footer,.week-readout,.scroll-link,.text-button,.share-caption{font-size:10px!important}
+  .section-heading-foot{display:block}.section-heading-foot .text-button{margin-top:16px}.section-heading h2{font-size:15vw}
+  .weeks-description{margin-top:27px}.weeks-heading h2{font-size:clamp(43px,13vw,65px)}
+  .legend{gap:15px;flex-wrap:wrap}.week-readout{line-height:1.8;padding-block:14px}.weeks-footer{display:block}.weeks-footer>span{display:block;max-width:none;margin-top:8px}
+  .scene-days .scene-layout{min-height:310px;padding-block:45px 35px}.scene-days .scene-value{font-size:28vw}.scene-days .scene-art{height:120px}
+  .scene-days .secondary-metric{flex-basis:48%;padding-inline:0}.scene-days .secondary-metric .metric-value{font-size:36px}
+  .scene-summers .scene-layout{min-height:330px;padding-top:40px}.scene-summers .scene-value{font-size:145px}
+  .scene-summers .summer-disc{width:220px;height:220px;top:10px}.scene-summers .summer-orbit{width:300px;left:calc(50% - 150px);height:100px;top:60px}
+  .scene-summers .scene-art{height:270px}.scene-summers .scene-title-big{font-size:35px}.summer-controls{padding-top:22px;margin-top:20px}
+  .summer-controls>label{font-size:12px}.summer-readout{display:block;margin-top:10px}#summer-year{font-size:100px}#summer-story{font-size:25px;margin-top:10px}
+  .scene-summers .scene-secondary{margin-top:10px}.interaction-note{font-size:12px}
+  .scene-meetings .scene-layout{text-align:left;padding-block:25px}.scene-meetings .scene-value{font-size:25vw}.scene-meetings .scene-description{margin-left:0;font-size:13px}
+  .scene-meetings .scene-title-big{font-size:31px}.later-episode{padding-top:35px}.later-opening h3{font-size:39px;margin-block:24px 28px}
+  .later-opening input{font-size:27px}.later-stage{display:block;padding-block:28px;margin-top:27px}.later-letter>p{font-size:37px}
+  .later-date{margin-top:35px;text-align:left;gap:14px}.later-date strong{font-size:40px}.later-date>span{font-size:10px}
+  .later-controls>label{font-size:11px;align-items:center}.later-range-ends{font-size:9px}.later-controls output{font-size:10px}
+  .later-revelation{display:block;padding-block:35px}.later-revelation>strong{font-size:110px}.later-revelation>p{font-size:26px;margin-top:20px}.later-revelation small{font-size:12px}
+  .later-dots{grid-template-columns:repeat(15,minmax(0,1fr));gap:7px}.later-dots i{height:13px}.later-dot-note{font-size:11px}.later-reset{font-size:10px!important}
+  .scene-body .scene-layout{padding-top:35px}.scene-body .scene-value{font-size:12vw}.scene-body .scene-art{height:170px;margin-top:25px}.body-lines{height:170px}
+  .scene-body .secondary-metric{display:block;text-align:left}.scene-body .secondary-metric .metric-value{font-size:11vw}.scene-body .secondary-metric .metric-title{font-size:26px}.scene-body .secondary-metric .metric-description{margin-left:0}
+  .scene-sleep .scene-layout{display:flex;flex-direction:column-reverse;gap:30px;min-height:0;padding-top:30px}.scene-sleep .scene-layout>div:first-child{text-align:left;width:100%}
+  .scene-sleep .scene-value{font-size:24vw}.scene-sleep .scene-description{margin-left:0}.scene-sleep .scene-art{height:220px;max-width:350px}.scene-sleep .sleep-art{height:175px;padding-top:15px}
+  .sleep-explanation{display:block;font-size:10px;margin-top:20px}.sleep-explanation>span{display:block}.sleep-explanation>span:last-child{text-align:left;margin-top:12px}
+  .scene-sunrises .scene-layout{min-height:460px;padding-block:35px 20px}.scene-sunrises .scene-layout>div:first-child{padding-top:130px}.scene-sunrises .scene-value{font-size:26vw}
+  .scene-sunrises .scene-art{height:190px}.scene-sunrises .scene-title-big{font-size:31px}.sunrise-thought{font-size:27px;margin-top:20px}
+  .scene-self .scene-layout{min-height:0;padding-block:40px 10px}.scene-self .scene-value{font-size:26vw}.scene-self .scene-title-big{font-size:33px}
+  .postponed-word{font-size:28vw;align-items:start;padding-top:50px}.scene-self .scene-art{height:165px;margin-top:25px}.scene-self .book-sculpture{height:165px}.scene-self .book-sculpture i{height:145px}
+  .meaning-meta{gap:18px;align-items:start}.meaning-meta .eyebrow,.meaning-meta>span{font-size:9px;line-height:1.6}.meaning-meta>span{text-align:right}
+  .meaning-copy p{font-size:14px;line-height:1.9}.meaning-cross{font-size:65px;top:35px}.meaning-copy>p{max-width:260px}
+  .intention-form{margin-block:28px}.intention-form label{font-size:12px}.intention-form input{font-size:16px}.intention-button{font-size:11px}
+  .meaning-copy .button{font-size:11px}.share-caption{font-size:10px!important}.final-line{font-size:10px;line-height:1.7}.footer p,.footer>a:last-child{font-size:10px;line-height:1.6}
+  .metrics-note{font-size:12px}.dialog-description,.field-note{font-size:12px}.dialog-header .eyebrow{font-size:9px}.habit-fields label{font-size:11px;line-height:1.6}
+}
+@media(prefers-reduced-motion:reduce){.scene-days .day-stripes i,.scene-summers .summer-orbit,.sunrise-lines:before,.postponed-word{transition:none;transform:none}.postponed-word{opacity:.08}.later-dots i{transition:none}}

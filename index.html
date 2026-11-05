@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4eee3">
+  <meta name="application-name" content="однажды.">
+  <meta name="apple-mobile-web-app-title" content="однажды.">
+  <meta name="description" content="История из твоих мгновений. Вспомни, как много уже было, побудь в настоящем и открой то, что ещё может случиться.">
+  <title>однажды. — история из твоих мгновений</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="canonical" href="https://odnazdy.ru/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="однажды.">
+  <meta property="og:title" content="однажды. — уже было, ещё будет">
+  <meta property="og:description" content="История из твоих мгновений. Вспомни, как много уже было, и открой то, что ещё может случиться.">
+  <meta property="og:url" content="https://odnazdy.ru/">
+  <meta property="og:image" content="https://odnazdy.ru/og-odnazhdy.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="однажды. — уже было, ещё будет. Моменты, из которых складывается жизнь.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="однажды. — уже было, ещё будет">
+  <meta name="twitter:description" content="Твоя история из обычных и необыкновенных мгновений.">
+  <meta name="twitter:image" content="https://odnazdy.ru/og-odnazhdy.png">
+  <link rel="stylesheet" href="styles.css?v=20261104-welcome">
+  <link rel="stylesheet" href="experience.css?v=20261104-welcome">
+  <link rel="stylesheet" href="brand.css?v=20261104-welcome">
+  <script src="app.js?v=20261104-welcome" defer></script>
+  <script src="experience.js?v=20261104-welcome" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#time">К содержимому</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="однажды. — на главную">однажды<span class="brand-dot">.</span></a>
+    <span class="header-caption">О МГНОВЕНИЯХ, КОТОРЫЕ<br>СТАНОВЯТСЯ ЖИЗНЬЮ</span>
+    <button class="text-button header-edit" data-edit>МОЯ ИСТОРИЯ <span>↗</span></button>
+  </header>
+  <main>
+    <section class="hero" id="time">
+      <div class="wrap hero-prelude"><p class="eyebrow">[ 01 — УЖЕ БЫЛО ]</p><h1>Как много уже было<span class="red">.</span></h1><p class="hero-aside">Первые встречи. Дорога домой.<br>Моменты, которые остались с тобой.</p></div>
+      <div class="counter-stage" aria-label="Процент прожитой жизни">
+        <div class="wrap counter-top"><span id="example-label">ПРИМЕР · ПОДСТАВЬ СВОЮ ДАТУ</span><span class="live-label"><i></i> ИСТОРИЯ ПРОДОЛЖАЕТСЯ</span></div>
+        <div class="wrap percent-row"><div class="percent" id="percent"><span class="whole">35</span><span class="fraction">,285623000</span></div><div class="percent-side"><span class="percent-sign">%</span><span>ТВОЕЙ<br>ИСТОРИИ</span></div></div>
+        <div class="counter-scan" aria-hidden="true"></div>
+        <div class="counter-bottom wrap"><p>Здесь — дни, которые были твоими.<br>И мгновения, которые ещё рядом.</p><button class="circle-link" data-edit aria-label="Узнать свой процент"><span>А У ТЕБЯ?</span><b>↗</b></button><span class="vertical-note">ИЗ МГНОВЕНИЙ СКЛАДЫВАЕТСЯ ЖИЗНЬ</span></div>
+      </div>
+      <div class="wrap life-ruler"><div class="life-track" id="life-track" aria-hidden="true"></div><div class="track-labels"><span id="birth-label">Начало</span><span class="today-marker"><span class="today-arrow">↑</span><span class="today-copy">ТВОЁ СЕЙЧАС</span></span><span id="horizon-label">Жизнь: 80 лет</span></div></div>
+      <div class="wrap hero-foot"><p>Это способ почувствовать время.<br>Представим жизнь длиной <button class="inline-button" data-edit id="horizon-inline">80 лет</button>. Ты можешь выбрать другую.</p><a href="#passing" class="scroll-link">ПОСМОТРЕТЬ НА СВОЮ ИСТОРИЮ <span>↓</span></a></div>
+    </section>
+
+    <section class="passing-section" id="passing" aria-labelledby="passing-title">
+      <div class="wrap passing-head"><p class="eyebrow">[ 02 — ПРОИСХОДИТ СЕЙЧАС ]</p><span>ЗДЕСЬ МОЖНО НЕМНОГО ЗАДЕРЖАТЬСЯ.</span></div>
+      <div class="time-spool" aria-hidden="true"><div>ЗДЕСЬ / ЗДЕСЬ / ЗДЕСЬ / ЗДЕСЬ /&nbsp;</div><div>ЗДЕСЬ / ЗДЕСЬ / ЗДЕСЬ / ЗДЕСЬ /&nbsp;</div></div>
+      <div class="wrap passing-layout"><h2 id="passing-title">Этот маленький момент<br><em>уже твой.</em></h2><div class="session-clock"><span id="session-seconds">00</span><span class="session-unit">СЕКУНД ЭТОГО МОМЕНТА</span></div><p>Можно просто смотреть.<br>И ничего не делать.</p></div>
+      <div class="second-traces" id="second-traces" aria-hidden="true"></div><div class="wrap passing-footer"><span>КАЖДЫЙ ШТРИХ — МАЛЕНЬКОЕ СЕЙЧАС</span><button id="presence-button" class="presence-button">ПОБЫТЬ ЗДЕСЬ 10 СЕКУНД <span>↗</span></button><span id="presence-status" role="status"></span></div>
+    </section>
+
+    <section class="moments-section" id="moments">
+      <div class="wrap section-heading"><p class="eyebrow">[ 03 — ЕЩЁ МОЖЕТ БЫТЬ ]</p><h2>И сколько ещё<br><span><em>может быть.</em></span></h2><div class="section-heading-foot"><p>Будущие лета, разговоры и открытия.<br>У каждого будет своя история.</p><button class="text-button" data-edit>НАСТРОИТЬ ПОД СЕБЯ <span>↗</span></button></div></div>
+      <section class="weeks-section" id="weeks"><div class="wrap weeks-heading"><p class="eyebrow">[ 01 / 08 — МАСШТАБ ЖИЗНИ ]</p><h2>Одна клетка.<br>Одна <em>неделя.</em></h2><div class="weeks-description"><p>Обычные завтраки. Смешные разговоры.<br>Дорога домой. Чьи-то тёплые руки.<br>В каждой — целая неделя жизни.</p><div class="legend"><span><i class="spent"></i> УЖЕ БЫЛО</span><span><i class="current"></i> ТЫ ЗДЕСЬ</span><span><i></i> МОЖЕТ БЫТЬ</span></div></div></div><div class="wrap fingerprint"><div class="weeks-grid" id="weeks-grid" role="img" aria-label="Недели жизни"></div><div class="week-readout" id="week-readout" aria-live="polite">ПРОВЕДИ ПО ПОЛЮ — НАЙДИ СВОЮ НЕДЕЛЮ</div></div><div class="wrap weeks-footer"><span>ИСТОРИЯ ИЗ ОБЫЧНЫХ И НЕОБЫКНОВЕННЫХ ДНЕЙ.</span><span>ПОСЛЕДНЯЯ КЛЕТКА МОЖЕТ БЫТЬ НЕПОЛНОЙ.</span></div></section>
+      <div id="metrics"></div>
+      <div class="wrap metrics-note">Цифры приблизительны. Твои мгновения — настоящие. <button class="inline-button" data-edit>Твои привычки ↗</button></div>
+    </section>
+
+
+    <section class="meaning-section" id="meaning"><div class="wrap meaning-meta"><p class="eyebrow">[ 04 — СЛЕДУЮЩАЯ ИСТОРИЯ ]</p><span>ЕЙ УЖЕ ЕСТЬ МЕСТО.</span></div><div class="wrap meaning-layout"><h2>ЕЩЁ<br>ОДНА<br><em>ИСТОРИЯ.</em></h2><div class="meaning-copy"><span class="meaning-cross" aria-hidden="true">↗</span><p>Долгий завтрак. Небольшая поездка.<br>Разговор, который не хочется заканчивать.<br>Какой будет твоя следующая история?</p><p class="muted">Можно начать с чего-то маленького.<br>С того, что тебе по душе.</p><button class="button" id="share-button">ПОДЕЛИТЬСЯ МГНОВЕНИЕМ <span>↗</span></button><p class="share-caption">Маленькая открытка о большой истории.</p></div></div><div class="wrap final-line"><span>ЧТО-ТО ПРЕКРАСНОЕ УЖЕ БЫЛО.</span><span>ЧТО-ТО ЕЩЁ МОЖЕТ СЛУЧИТЬСЯ.</span></div></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="#">однажды<span class="brand-dot">.</span></a><p>Уже было. Ещё будет.</p><a href="#time">К НАЧАЛУ ИСТОРИИ ↑</a></footer>
+
+  <dialog id="settings-dialog" aria-labelledby="settings-title"><form id="settings-form"><div class="dialog-header"><p class="eyebrow">У КАЖДОЙ ИСТОРИИ ЕСТЬ НАЧАЛО</p><button type="button" class="close-button" data-close aria-label="Закрыть">×</button></div><h2 id="settings-title">Твоя <em>история.</em></h2><p class="dialog-description">Когда началась твоя история? Подставь свою дату и посмотри на жизнь по-новому.</p><label>Дата рождения<input id="birth-input" name="birth" type="date" required autofocus></label><label>Продолжительность жизни, лет<input id="horizon-input" name="horizon" type="number" min="1" max="120" step="1" required><span class="field-note">Выбери, сколько лет представить на шкале. Это не предсказание.</span></label><details><summary>Твой ритм жизни <span>+</span></summary><div class="habit-fields"><label>Сон, часов в сутки<input name="sleep" type="number" min="0" max="24" step="0.5" required></label><label>Встречи с близкими в месяц<input name="meetings" type="number" min="0" max="100" step="1" required></label><label>Книг в год<input name="books" type="number" min="0" max="365" step="1" required></label><label>Любимое дело, часов в неделю<input name="hobby" type="number" min="0" max="168" step="1" required></label></div></details><p id="form-error" class="form-error" role="alert"></p><button type="submit" class="button submit-button">Увидеть мою историю <span>↗</span></button></form></dialog>
+  <dialog id="share-dialog" aria-labelledby="share-title"><div class="dialog-header"><p class="eyebrow">МОМЕНТ, КОТОРЫЙ ХОЧЕТСЯ СОХРАНИТЬ</p><button class="close-button" data-close aria-label="Закрыть">×</button></div><h2 id="share-title">Твоя история.<br><em>В одной открытке.</em></h2><canvas id="share-canvas" width="1080" height="1350" aria-label="Открытка с твоей историей"></canvas><div class="share-actions"><button id="download-card" class="button">Скачать карточку ↓</button><button id="copy-link" class="button button-outline">Скопировать ссылку ↗</button></div><p class="field-note">Поделись моментом. Личные данные останутся у тебя.</p><p id="share-status" role="status"></p></dialog>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>

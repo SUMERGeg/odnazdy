@@ -91,7 +91,7 @@ $('#metrics').innerHTML = [
   scene('heart','04','ТИХИЙ РИТМ ТВОЕГО СЕЙЧАС.', '<svg class="body-lines" viewBox="0 0 500 200" preserveAspectRatio="none"><path class="baseline" d="M0 100H500"/><path class="wave" d="M0 100h90l12-15 14 32 18-105 24 165 19-77h105l12-15 14 32 18-105 24 165 19-77h131"/></svg>', ['breath']),
   scene('sleep','05','МИР ПОДОЖДЁТ ДО УТРА.', '<div class="sleep-art"><span></span><span></span><i class="sleep-z">z</i><i class="sleep-z">z</i><i class="sleep-z">z</i></div>', ['awake']),
   scene('sunrises','06','УТРО, В КОТОРОМ МОЖНО УДИВИТЬСЯ.', '<div class="sunrise-lines"></div><span class="scene-art-caption">ХОТЯ БЫ ОДИН — ВСТРЕТЬ НЕ ТОРОПЯСЬ.</span>', ['moons']),
-  scene('hobby','07','МАЛЕНЬКИЕ УВЛЕЧЕНИЯ. БОЛЬШИЕ РАДОСТИ.', `<div class="book-sculpture">${'<i></i>'.repeat(18)}</div>`, ['books'])
+  scene('hobby','07','МАЛЕНЬКИЕ УВЛЕЧЕНИЯ. БОЛЬШИЕ РАДОСТИ.', '<div id="story-book-mount"></div>', ['books'])
 ].join('');
 $('.scene-summers').append($('.summer-controls'));
 // Scene names describe visual treatments, independent of their calculation keys.
